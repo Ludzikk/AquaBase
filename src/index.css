@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+	--color-title: #024a70;
+}
+
+button {
+	cursor: pointer;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	overflow-x: hidden;
+}
+
+.markdown h2 {
+	font-weight: bold;
+	font-size: 18px;
+	padding: 12px 0 6px 0;
+}
+
+.header-bg {
+	background-image: url("/header-sm.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.header-bg {
+		background-image: url("/header-lg.jpg");
+	}
+}
